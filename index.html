@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stigma Design Editor</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.8.0/fonts/remixicon.css"
+    rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="home">
+        <div id="center">
+            <h1>YouCreate</h1>
+            <p>Platform to innovete your Creativity with our <i>Design</i></p>
+        </div>
+        <div id="btn">Get Started</div>
+        <div id="cards">
+            <div class="card">
+                <div class="top">
+                    <img src="./designfreely.png">
+                </div>
+                <div class="bottom">
+                    <h4>Design Freely</h4>
+                    <h6>Drag,Resize,Rotate Elements</h6>
+                </div>
+            </div>
+            <div class="card">
+                 <div class="top">
+                    <img src="./layer.png">
+                 </div>
+                <div class="bottom">
+                    <h4>Design Freely</h4>
+                    <h6>Drag,Resize,Rotate Elements</h6>
+                </div>
+            </div>
+            <div class="card">
+                 <div class="top">
+                    <img src="./layout.png">
+                 </div>
+                <div class="bottom">
+                    <h4>Design Freely</h4>
+                    <h6>Drag,Resize,Rotate Elements</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="main">
+        <div id="top">
+            <h2>YouCreate</h2>
+            <div id="menu">
+                <h3 id="homeBtn">Home</h3>
+                <h3>File</h3>
+                <h3>Edit</h3>
+                <h3>View</h3>
+                <h3>Help</h3>
+                <button id="clearCanvas">New Design</button>
+            </div>
+        </div>
+        <div id="editor">
+             <div id="layers">
+                <h3>Layers</h3>
+                <ul id="list"> </ul>
+             </div>
+            <div id="canvas"></div>
+            <div id="rightPanel">
+                <div id="add">
+                    <button id="rectangle">Add Rectangle</button>
+                    <button id="addText">Add Text</button>
+                </div>
+                <div id="properties">
+                    <h3>Properties</h3>
+                    <div id="no-selection">Select an element</div>
+                        <div id="props" style="display: none;">
+                            <label>
+                                X:
+                                <input type="number" id="prop-x">
+                            </label>
+                            <label>
+                                Y:
+                                <input type="number" id="prop-y">
+                            </label>
+                            <label>
+                                Width:
+                                <input type="number" id="prop-width">
+                            </label>
+                            <label>
+                                Height:
+                                <input type="number" id="prop-height">
+                            </label>
+                            <label>
+                                Rotation:
+                                <input type="number" id="prop-rotation">
+                            </label>
+                            <label>
+                                Color:
+                                <input type="color" id="prop-color"> 
+                            </label>
+                            <div id="rainbow"></div>
+                        </div>
+                        <span id="saveStatus">Saved</span>
+                         <div id="exportSection">
+                            <div id="exportHeader">Export <i class="ri-arrow-drop-down-fill"></i></div>
+                            <div id="exportOptions">
+                            <button id="exportJSON">Export JSON</button>
+                            <button id="exportHTML">Export HTML</button>
+                         </div>
+                </div>
+               
+</div>
+
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
